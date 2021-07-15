@@ -5,6 +5,8 @@ Questa repository raggrupa le tre cose da sviluppare per la parte sviluppo della
   *  esame-finale: la parte single page application con `vuejs`
   *  Html&Css: per la parte sito statica del progetto.
 
+# Caricamento 
+` git clone https://github.com/jeserama/esame-finale.git`
 # SPECIFICAZIONE
 All'interno di ogni cartella ci sarà un documento `README` che specifichera come avviare e le cosa da installare al eccezione di `Html&Css` che non c'è nienta da installa basta avviarlo dentro il browser o usare `live Server` di VSCode.
 # AUTORE
