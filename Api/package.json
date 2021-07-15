@@ -1,0 +1,15 @@
+{
+    "name": "gestione-parco-divvertimeto",
+    "description": "Documentazione API per l'esame final FEX 2021 fatto con fastify e fastify-Swagger",
+    "authors": "Jese Miharinjato Ramanantsoa",
+    "version": "1.0.0",
+    "main": "index.js",
+    "dependencies": {
+        "fastify": "^3.19.1",
+        "fastify-swagger": "^4.8.3",
+        "typescript": "^4.3.5"
+    },
+    "devDependencies": {
+        "@types/node": "^16.3.2"
+    }
+}
