@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/bootstrap.css">
+    <link rel="stylesheet" href="../css/all.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/cart.css">
+    <title>Cart</title>
+</head>
+
+<body>
+
+    <div class="d-flex flex-column h-100">
+        <div class="container-fluid main-content media-body">
+            <!--MENU-->
+            <div class="col-3 p-0 menu">
+                <input type="checkbox" id="ham-menu">
+                <label for="ham-menu">
+                    <div class="hide-des">
+                        <span class="menu-line"></span>
+                        <span class="menu-line"></span>
+                        <span class="menu-line"></span>
+                        <span class="menu-line"></span>
+                        <span class="menu-line"></span>
+                        <span class="menu-line"></span>
+                    </div>
+                </label>
+
+                <div class="ham-menu">
+                    <ul class="centre-text bold-text ">
+                        <li>
+                            <router-link class="" :to="`/mycomponent/`">Home</router-link>
+                        </li>
+                        <li><a href="./pages/details.html">Categories</a></li>
+                        <li>Servizi</li>
+                        <li>Curiosità</li>
+                        <li>Lavora con noi</li>
+                        <li>Contatarci</li>
+
+                    </ul>
+                </div>
+            </div> <!--MENU-->
+            <div class="col p-5 scrollable">
+                <!--BANNER-->
+                <div class="banner-image" >
+                    <div class="banner-text" >
+                        <h1>Benvenuti su Touring Club Italiano</h1>
+                        
+                    </div>
+                </div> <!--BANNER-->
+                <div class="content">
+                    <table id="cart" class="table table-hover table-condensed">
+                        <thead>
+                            <tr>
+                                <th >Product</th>
+                                <th >Prezzo</th>
+                                <th >Quantà</th>
+                                <th class="text-center">Subtotal</th>
+                                <th ></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td >
+                                    <div class="row">
+                                        <div class="col-sm-2 hidden-xs"><img src="../assets/roma.jpg"   class="img-thumbnail"/></div>
+                                        <div class="col-sm-10">
+                                            <h4 class="nomargin">Roma</h4>
+                                            <p>Quis aute iure reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Lorem ipsum dolor sit amet.</p>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td class="price">15 €</td>
+                                <td >
+                                    <h6>Quantità</h6>
+                                    <input type="number" class="form-control text-center" value="1">
+                                </td>
+                                <td  class="text-center h6">15 </td>
+                                <td class="actions" data-th="">
+                                    <button class="btn btn-info btn-sm"><i class="fas fa-sync-alt"></i></i></button>
+                                    <button class="btn btn-danger btn-sm"><i class="fas fa-trash-alt"></i></button>								
+                                </td>
+                            </tr>
+                        </tbody>
+                        <tfoot>
+                            <tr class="visible-xs">
+                                <td class="text-center"><strong>Total 15 €</strong></td>
+                            </tr>
+                            <tr>
+                                <td><a href="#" class="btn btn-warning"><i class="fa fa-angle-left"></i> Continuare l'acquista</a></td>
+                                <td colspan="2" class="hidden-xs"></td>
+                                <td class="hidden-xs text-center total"><strong>Total 15 €</strong></td>
+                                <td><a href="#" class="btn btn-success btn-block">Compra <i class="fa fa-angle-right"></i></a></td>
+                            </tr>
+                        </tfoot>
+                    </table>
+                </div>
+                <div class="container-fluid-footer pb-0 mb-0 justify-content-center text-light">
+                    <footer>
+                      <div class="row my-5 justify-content-center py-5">
+                        <div class="col-11">
+                          <div class="row">
+                            <div class="col-xl-8 col-md-4 col-sm-4 col-12 my-auto mx-auto a">
+                              <h3 class=" mb-md-0 mb-5 bold-text">Touring Club Italiano</h3>
+                            </div>
+                            <div class="col-xl-2 col-md-4 col-sm-4 col-12">
+                              <h6 class="mb-3 mb-lg-4 bold-text">MENU</h6>
+                              <ul class="list-unstyled">
+                                <li><a href="#">Home</a></li>
+                                <li><a href="#">Categoris</a></li>
+                              
+                                
+                              </ul>
+                            </div>
+                            <div class="col-xl-2 col-md-4 col-sm-4 col-12">
+                              <h6 class="mb-3 mb-lg-4  bold-text mt-sm-0 mt-5">
+                                ADDRESS
+                              </h6>
+                              <p class="mb-1">VIA PRASECCO 33</p>
+                              <p>PORDENONE</p>
+                            </div>
+                          </div>
+                          <div class="row">
+                            <div
+                              class="
+                                col-xl-8 col-md-4 col-sm-4 col-auto
+                                my-md-0
+                                mt-5
+                                order-sm-1 order-3
+                                align-self-end
+                              "
+                            >
+                              <p class="social  mb-0 pb-0 bold-text">
+                                <span class="mx-2"
+                                  ><i class="fab fa-facebook-square"></i></span>
+                                <span class="mx-2"
+                                  ><i class="fab fa-linkedin" aria-hidden="true"></i></span>
+                                <span class="mx-2"
+                                  ><i class="fab fa-twitter-square"></i>
+                                </span>
+                                <span class="mx-2"
+                                  ><i class="fab fa-instagram-square"></i></span>
+                              </p>
+                              <small class="rights"
+                                ><span>&#174;</span> Touring Club Italiano All Rights Reserved.</small
+                              >
+                            </div>
+                            <div
+                              class="
+                                col-xl-2 col-md-4 col-sm-4 col-auto
+                                order-2
+                                align-self-end
+                                mt-3
+                              "
+                            >
+                              <h6 class=" bold-text">Jese Ramanantsoa</h6>
+                              <small
+                                ><span><i class="fa fa-envelope" aria-hidden="true"></i></span>
+                                jese.ramanantsoa@stud.tecnicosuperiorekennedy.it
+                            </small>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </footer>
+                  </div>
+        </div>
+        </div>
+
+    </div>
+
+
+</body>
+
+</html>

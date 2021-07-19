@@ -1,15 +1,230 @@
 <!DOCTYPE html>
 <html lang="it">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/bootstrap.css">
     <link rel="stylesheet" href="./css/all.css">
-    <link rel="stylesheet" href="/css/style.css">
-    <title></title>
+    <link rel="stylesheet" href="./css/cards.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <title>Home</title>
 </head>
+
 <body>
 
+    <div class="d-flex flex-column h-100">
+        <div class="container-fluid main-content media-body">
+            <!--MENU-->
+            <div class="col-3 p-0 menu">
+                <input type="checkbox" id="ham-menu">
+                <label for="ham-menu">
+                    <div class="hide-des">
+                        <span class="menu-line"></span>
+                        <span class="menu-line"></span>
+                        <span class="menu-line"></span>
+                        <span class="menu-line"></span>
+                        <span class="menu-line"></span>
+                        <span class="menu-line"></span>
+                    </div>
+                </label>
+
+                <div class="ham-menu">
+                    <ul class="centre-text bold-text banner-text ">
+                        <li>
+                            <router-link class="" :to="`/mycomponent/`">Home</router-link>
+                        </li>
+                        <li><a href="./pages/details.html">Categories</a></li>
+                        <li>Servizi</li>
+                        <li>Curiosità</li>
+                        <li>Lavora con noi</li>
+                        <li>Contatarci</li>
+
+                    </ul>
+                </div>
+            </div> <!--MENU-->
+            <div class="col p-5 scrollable">
+                <!--BANNER-->
+                <div class="banner-image" >
+                    <div class="banner-text" >
+                        <h1>Benvenuti su Touring Club Italiano</h1>
+                    </div>
+                </div> <!--BANNER-->
+                <div class="content mt-5">
+                    <div id="products" class="row view-group">
+                                <div class="item col-xs-4 col-lg-4">
+                                    <div class="thumbnail card">
+                                        <div class="img-event">
+                                            <img class="group list-group-image img-fluid" src="./assets/roma.jpg" alt="Immagine colliseo di roma ,ci sono tante persone" />
+                                        </div>
+                                        <div class="caption card-body">
+                                            <h4 class="group card-title inner list-group-item-heading">
+                                                Roma</h4>
+                                            <p class="group inner list-group-item-text">
+                                                Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
+                                                sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+                                            <div class="row">
+                                                <div class="col-xs-12 col-md-6">
+                                                    <p class="lead">
+                                                        15 €</p>
+                                                </div>
+                                                <div class="col-xs-12 col-md-6">
+                                                    <a class="btn btn-success" href="./pages/details.html">Scopri di più</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item col-xs-4 col-lg-4">
+                                    <div class="thumbnail card">
+                                        <div class="img-event">
+                                            <img class="group list-group-image img-fluid" src="./assets/Venezia.jpg" alt="Imagine di venezia, delle persone su un gondola" />
+                                        </div>
+                                        <div class="caption card-body">
+                                            <h4 class="group card-title inner list-group-item-heading">
+                                                Venezia</h4>
+                                            <p class="group inner list-group-item-text">
+                                                Product description... Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
+                                                sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+                                            <div class="row">
+                                                <div class="col-xs-12 col-md-6">
+                                                    <p class="lead">
+                                                        50 €</p>
+                                                </div>
+                                                <div class="col-xs-12 col-md-6">
+                                                    <a class="btn btn-success" href="./pages/details.html">Scopri di più</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item col-xs-4 col-lg-4">
+                                    <div class="thumbnail card">
+                                        <div class="img-event">
+                                            <img class="group list-group-image img-fluid" src="./assets/firenze.jpg" alt="la cità di firenze visto dall'alto, con la catedrale di Santa Maria del Fiore" />
+                                        </div>
+                                        <div class="caption card-body">
+                                            <h4 class="group card-title inner list-group-item-heading">
+                                                Firenze</h4>
+                                            <p class="group inner list-group-item-text">
+                                               Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
+                                                sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+                                            <div class="row">
+                                                <div class="col-xs-12 col-md-6">
+                                                    <p class="lead">
+                                                        20 €</p>
+                                                </div>
+                                                <div class="col-xs-12 col-md-6">
+                                                    <a class="btn btn-success" href="./pages/details.html">Scopri di più</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item col-xs-4 col-lg-4">
+                                    <div class="thumbnail card">
+                                        <div class="img-event">
+                                            <img class="group list-group-image img-fluid" src="./assets/cinqueTerre.jpg" alt="Immagine della costa dei cinque terra, ci sono delle casete colorate" />
+                                        </div>
+                                        <div class="caption card-body">
+                                            <h4 class="group card-title inner list-group-item-heading">
+                                                Varie</h4>
+                                            <p class="group inner list-group-item-text">
+                                                Product description... Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
+                                                sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+                                            <div class="row">
+                                                <div class="col-xs-12 col-md-6">
+                                                    <p class="lead">
+                                                        39 €</p>
+                                                </div>
+                                                <div class="col-xs-12 col-md-6">
+                                                    <a class="btn btn-success" href="./pages/details.html">Scopri di più</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                               
+                            </div>
+                </div>
+                <!--FOOTER-->
+                <div class="container-fluid-footer pb-0 mb-0 justify-content-center text-light">
+                    <footer>
+                      <div class="row my-5 justify-content-center py-5">
+                        <div class="col-11">
+                          <div class="row">
+                            <div class="col-xl-8 col-md-4 col-sm-4 col-12 my-auto mx-auto a">
+                              <h3 class=" mb-md-0 mb-5 bold-text">Touring Club Italiano</h3>
+                            </div>
+                            <div class="col-xl-2 col-md-4 col-sm-4 col-12">
+                              <h6 class="mb-3 mb-lg-4 bold-text">MENU</h6>
+                              <ul class="list-unstyled">
+                                <li><a href="#">Home</a></li>
+                                <li><a href="#">About</a></li>
+                              
+                                
+                              </ul>
+                            </div>
+                            <div class="col-xl-2 col-md-4 col-sm-4 col-12">
+                              <h6 class="mb-3 mb-lg-4  bold-text mt-sm-0 mt-5">
+                                ADDRESS
+                              </h6>
+                              <p class="mb-1">VIA PRASECCO 33</p>
+                              <p>PORDENONE</p>
+                            </div>
+                          </div>
+                          <div class="row">
+                            <div
+                              class="
+                                col-xl-8 col-md-4 col-sm-4 col-auto
+                                my-md-0
+                                mt-5
+                                order-sm-1 order-3
+                                align-self-end
+                              "
+                            >
+                              <p class="social  mb-0 pb-0 bold-text">
+                                <span class="mx-2"
+                                  ><i class="fab fa-facebook-square"></i></span>
+                                <span class="mx-2"
+                                  ><i class="fab fa-linkedin" aria-hidden="true"></i></span>
+                                <span class="mx-2"
+                                  ><i class="fab fa-twitter-square"></i>
+                                </span>
+                                <span class="mx-2"
+                                  ><i class="fab fa-instagram-square"></i></span>
+                              </p>
+                              <small class="rights"
+                                ><span>&#174;</span> Touring Club Italiano All Rights Reserved.</small
+                              >
+                            </div>
+                            <div
+                              class="
+                                col-xl-2 col-md-4 col-sm-4 col-auto
+                                order-2
+                                align-self-end
+                                mt-3
+                              "
+                            >
+                              <h6 class=" bold-text">Jese Ramanantsoa</h6>
+                              <small
+                                ><span><i class="fa fa-envelope" aria-hidden="true"></i></span>
+                                jese.ramanantsoa@stud.tecnicosuperiorekennedy.it
+                            </small>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </footer>
+                  </div>
+        </div>
+        </div>
+
+    </div>
+
+
 </body>
+
 </html>
