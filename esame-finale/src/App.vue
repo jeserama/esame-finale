@@ -1,30 +1,39 @@
 <template>
-  <div id="nav">
-    <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link>
+  <div class="d-flex flex-column h-100">
+    <div class="container-fluid main-content media-body">
+        <div class="col-3 p-0">
+          <navbar/>
+        </div>
+          <div class="col p-5 scrollable">
+                <banner/>
+                <router-view />
+                <myfooter/>
+        </div>
+
+    </div>
+
   </div>
-  <router-view/>
+
 </template>
+<script lang="ts">
+import { Options, Vue } from 'vue-class-component';
+import Footer from './components/footer.vue';
+import Navbar from './components/navbar.vue';
+import Banner from"./components/banner.vue";
+@Options({
+  components: {
+    Navbar,
+    Footer,
+    Banner
+  },
+})
+export default class App extends Vue {}
+</script>
 
 <style lang="scss">
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-}
-
-#nav {
-  padding: 30px;
-
-  a {
-    font-weight: bold;
-    color: #2c3e50;
-
-    &.router-link-exact-active {
-      color: #42b983;
-    }
-  }
+@use './styles/main.scss';
+.scrollable {
+  max-height: 90vh;
+  overflow: auto;
 }
 </style>

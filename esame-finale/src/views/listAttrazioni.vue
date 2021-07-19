@@ -3,7 +3,7 @@
                                 <div class="item col-xs-4 col-lg-4">
                                     <div class="thumbnail card">
                                         <div class="img-event">
-                                            <img class="group list-group-image img-fluid" src="./assets/roma.jpg" alt="Immagine colliseo di roma ,ci sono tante persone" />
+                                            <img class="group list-group-image img-fluid" src="/assets/roma.jpg" alt="Immagine colliseo di roma ,ci sono tante persone" />
                                         </div>
                                         <div class="caption card-body">
                                             <h4 class="group card-title inner list-group-item-heading">
@@ -17,7 +17,10 @@
                                                         15 €</p>
                                                 </div>
                                                 <div class="col-xs-12 col-md-6">
+                                                    <router-link to="/dettaglio">
                                                     <a class="btn btn-success" href="./pages/details.html">Scopri di più</a>
+                                                    </router-link>
+                                                   
                                                 </div>
                                             </div>
                                         </div>
@@ -26,9 +29,15 @@
     </div>
 </template>
 <script lang="ts">
-import { defineComponent } from "vue";
+import { defineComponent, ref } from "vue";
+import { useStore } from "vuex";
 
 export default defineComponent({
-  name: "banner",
+  setup() {
+
+    return {
+
+    };
+  },
 });
 </script>
