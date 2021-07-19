@@ -1,6 +1,7 @@
 import { createApp } from 'vue'
 import App from './App.vue'
 import store from './store'
+import router from "./router";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import "@fortawesome/fontawesome-free/js/all.min.js";
 
@@ -16,6 +17,7 @@ const app = createApp(App);
 
 app
 .use(store)
+.use(router)
 .component("navbar", navbar)
 .component("myfooter",myfooter)
 .component("banner",banner)

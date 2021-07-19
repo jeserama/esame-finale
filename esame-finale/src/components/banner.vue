@@ -1,10 +1,8 @@
 <template>
     <div class="banner-image" id="bannerimage">
         <div class="banner-text" >
-            <h1>Welcome to our Site</h1>
-            <p>And I'm a Photographer</p>
-            <button>Hire me</button>
-            <a class="no-link" href="#"> This is link</a>
+            <h1>Benvenuti su Touring Club Italiano</h1>
+            
         </div>
     </div>
 </template>
@@ -19,7 +17,7 @@ export default defineComponent({
 /* The banner image */
 .banner-image {
  
- background-image: url('~@/assets/purpleimmage.jpg');
+ background-image: url('~@/assets/coloss_foro_banner.jpg');
 
   /* Set a specific height */
   height: 50%;
