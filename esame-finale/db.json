@@ -1,0 +1,46 @@
+{
+    "localita": [
+      {
+        "id": 1,
+        "luogo": "Roma",
+        "localita":[{
+              "nome": "Colosseo",
+              "tipi": "Storico , Paesaggistico"
+        }]
+  
+      },
+      {
+        "id": 2,
+        "luogo": "Venezia",
+        "attrazione":[{
+              "nome":"Piazza San Marco",
+              "tipi": "Storico , Paesaggistico"
+        }]
+  
+      },
+      {
+        "id": 3,
+        "luogo": "Firenze",
+        "localita":[{
+          "nome":"Galleria degli Uffizi",
+          "tipi": "Storico , Paesaggistico"
+        }]
+  
+      },
+      {
+        "id": 4,
+        "luogo": "Varie",
+        "localita":[{
+          "nome":"Cinque Terre",
+          "tipi": "Paesaggistico"
+        },
+        {
+          "nome":"Costiera Amalfitana",
+          "tipi": "Paesaggistico"
+        }
+      ]
+  
+      }
+      
+    ]
+  }
