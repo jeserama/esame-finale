@@ -13,7 +13,7 @@ import 'popper.js/dist/popper.js';
 import navbar from "./components/navbar.vue";
 import myfooter from "./components/footer.vue";
 import banner from"./components/banner.vue";
-const app = createApp(App);
+const app = createApp(App).use(router);
 
 app
 .use(store)
